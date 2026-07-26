@@ -194,8 +194,7 @@
       <div class="tk-total" id="tkTotal">0 Bs</div>
     </div>
 
-    <div class="aviso">Importante: realiza tu pago dentro de las próximas 24 horas o la reserva se libera.</div>
-
+    
     <button class="btn" id="bDescargar">Descargar mi ticket</button>
     <button class="btn sec" id="bNueva">Hacer otra reserva</button>
   </div>
@@ -384,8 +383,7 @@
     x.fillText('Total: '+total+' Bs', lx, y);
     // aviso
     y+=70; x.fillStyle='#9E3B33'; x.font='20px Arial';
-    x.fillText('Paga dentro de 24 horas o la reserva se libera.', lx, y);
-    // descargar
+        // descargar
     var a=document.createElement('a');
     a.href=c.toDataURL('image/png');
     a.download='ticket-'+estado.codigo+'.png';
